@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: "system-ui", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-weight: 500;
+}
+
+body {
+    background-image: url(/image/weather4.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+.input {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputcity {
+    color: white;
+    background-color: #265C6D;
+    width: 350px;
+    height: 50px;
+    border: #265C6D;
+    border-radius: 5px;
+    font-size: 30px;
+    padding: 10px 20px 10px;
+    margin: 5px;
+}
+
+.inputcity::placeholder {
+    color: white;
+    opacity: 0.5;
+}
+
+.inputcity:hover {
+    border: white solid 1px;
+}
+
+.btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.maininfo {
+    margin-top: 50px;
+    width: 65%;
+    height: 450px;
+    border-radius: 10px;
+    background-color: rgb(254, 254, 255, 0.5);
+    display: flex;
+    flex-direction: column;
+}
+
+.gradus {
+    display: flex;
+}
+
+.degre {
+    width: 50%;
+    padding: 20px;
+}
+
+#time {
+    margin-top: 10px;
+}
+
+.icon {
+    width: 50%;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.icon h1 {
+    margin: 10px;
+}
+
+
+
+.degre__gradus {
+    font-size: 100px;
+    text-align: center;
+}
+
+.icons {
+    width: 150px;
+    height: 150px;
+}
+
+.maininfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.allinfo {
+    width: 100%;
+    height: 45%;
+    display: flex;
+}
+
+.infos1 {
+    width: 50%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.infos2 {
+    width: 50%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.icon1 {
+    width: 100%;
+    margin: 6px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon1 span {
+    font-size: 20px;
+}
+
+.icon11 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 10px;
+    width: 40%;
+}
+
+.icon12 {
+    margin-right: 10px;
+    width: 30%;
+    display: flex;
+    align-items: center;
+}

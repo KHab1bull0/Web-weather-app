@@ -49,7 +49,7 @@ async function weather() {
             citys.textContent = 'Weather today in ' + json.name  + shortcity;
 
             const weathertype = document.querySelector('.weathertype')
-            weathertype.textContent = json.weather[0].main
+            weathertype.textContent = (json.weather[0].description)[0].toUpperCase() + json.weather[0].description.slice(1)
 
             let airInfo = json.weather[0].main
 

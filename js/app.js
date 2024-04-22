@@ -69,9 +69,7 @@ weather()
 
 
 const input = document.querySelector('.btn')
-input.children[0].addEventListener('click', () => {
-    weather()
-})
+input.children[0].addEventListener('click', weather)
 
 
 

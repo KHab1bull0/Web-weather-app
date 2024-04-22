@@ -18,7 +18,7 @@ async function weather() {
     }
 
     if (city) {
-        try{
+        try {
             const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${ukey}&units=metric`
 
             const res = await fetch(url)
@@ -44,9 +44,9 @@ async function weather() {
 
             const citys = document.querySelector('.city')
 
-            let shortcity = ','+json.sys.country;
-            if(shortcity == ',undefined') {shortcity = ''};
-            citys.textContent = 'Weather today in ' + json.name  + shortcity;
+            let shortcity = ',' + json.sys.country;
+            if (shortcity == ',undefined') { shortcity = '' };
+            citys.textContent = 'Weather today in ' + json.name + shortcity;
 
             const weathertype = document.querySelector('.weathertype')
             weathertype.textContent = (json.weather[0].description)[0].toUpperCase() + json.weather[0].description.slice(1)

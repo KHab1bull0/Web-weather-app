@@ -2,14 +2,21 @@
 async function weather() {
 
     const data = new Date()
-    let arr = data.toDateString().split(' ')
+    let arr = data.toDateString()
     let hour = data.getHours()
     let minuts = data.getMinutes()
 
-    const times = document.getElementById('time')
-    times.textContent = arr[0] + ', ' + arr[1] + "  " + arr[2] + ' ' + hour + ':' + minuts
+    const date = document.getElementById('date')
+    date.textContent = arr
 
-    const ukey = `5f8503fb89ffdb650735ce3ffd36d138`
+    const times = document.getElementById('time')
+    if(minuts < 10){
+        times.textContent = hour + ' : 0' + minuts
+    } else {
+        times.textContent = hour + ' : ' + minuts
+    }
+
+    const key = `5f8503fb89ffdb650735ce3ffd36d138`
     let city = document.querySelector('.inputcity').value
     console.log(city)
 
@@ -19,7 +26,7 @@ async function weather() {
 
     if (city) {
         try {
-            const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${ukey}&units=metric`
+            const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}&units=metric`
 
             const res = await fetch(url)
             const json = await res.json()

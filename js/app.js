@@ -61,7 +61,7 @@ async function weather() {
             let airInfo = json.weather[0].main
 
             const air = document.querySelector('.icons')
-            air.src = `/image/${airInfo}.png`
+            air.src = `./image/${airInfo}.png`
 
         } catch {
             console.log('Bunday shahar topilmadi')

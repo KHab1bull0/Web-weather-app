@@ -22,7 +22,8 @@ async function weather() {
 
     if (city == '') {
         city = 'tashkent'
-    }
+    };
+
 
     if (city) {
         try {
@@ -75,8 +76,8 @@ async function weather() {
 weather()
 
 
-const input = document.querySelector('.btn')
-input.children[0].addEventListener('click', weather)
+const input = document.querySelector('.btn');
+input.children[0].addEventListener('click', weather);
 
 
 

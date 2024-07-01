@@ -74,8 +74,6 @@ async function weather() {
 }
  
 
-
-
 weather()
 
 const input = document.querySelector('.btn')

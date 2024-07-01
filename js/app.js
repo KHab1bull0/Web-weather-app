@@ -72,6 +72,8 @@ async function weather() {
         console.log('inputni toldir!')
     }
 }
+ 
+
 
 
 weather()

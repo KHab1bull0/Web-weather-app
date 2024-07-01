@@ -73,11 +73,11 @@ async function weather() {
     }
 }
 
+
 weather()
 
-
-const input = document.querySelector('.btn');
-input.children[0].addEventListener('click', weather);
+const input = document.querySelector('.btn')
+input.children[0].addEventListener('click', weather)
 
 
 
